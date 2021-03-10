@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+  </head>
+ 
+  ​<body>
+    <!-- Container start here -->
+        <div id="container">
+            <h1>WIN At Tipping!</h1>
+            <!--the calculator form start here-->
+            <div id="calculator">
+                <form>
+                    <p style="font-family:'Times New Roman', Times, serif; font-size:120%;">How much was your bill?</p>
+                    <p>
+                        $ <input id="billamt" type="number" min= 0 placeholder="Enter Number Only"
+                        pattern="[0-9]+"  title="Positive Number Only" required="required">
+                    </p>
+          ​          <p style="font-family:'Times New Roman', Times, serif; font-size:120%;">How was your service?</p>
+                    <p>
+                        <select id="serviceQual">
+                          <option disabled selected value="0">Select an amount to tip...</option>
+                          <option value="0.3">30&#37; &#45; Excellent Service</option>
+                          <option value="0.2">20&#37; &#45; Good Service</option>
+                          <option value="0.15">15&#37; &#45; Okay Service</option>
+                          <option value="0.1">10&#37; &#45; Bad Service</option>
+                          <option value="0.05">5&#37; &#45; Very Bad Service</option>
+                        </select>
+          ​           </p>
+                    <p style="font-family:'Times New Roman', Times, serif; font-size:120%;">How many people are paying the bill?</p>
+                    <p>
+                      <input id="peopleamt" type="number" min = 1 placeholder="Enter a positive value" pattern="[0-9]+"  title="Positive number" required="required">
+        ​           </p>
+                </form>
+                <!--Button-->
+                <button style="font-family:'Times New Roman', Times, serif; font-size:120%;" type="button" id="calculate">Calculate Tip!</button>
+                ​
+            </div>
+          <!--calculator end-->
+            <div id="Summary">
+                  <div>
+                      <b> Bill : </b>
+                      <sup></sup><span id="Bill" >0.00</span> 
+                      <br>     
+                      <b> Tip : </b>
+                      <sup></sup><span id="Tip">0.00</span>
+                      <br>
+                      <b> Total Bill : </b>
+                      <sup></sup><span id="Totalbill">0.00</span>
+                      <br>
+                      <b> EachTip : </b>
+                      <sup></sup><span id="Eachtip">0.00</span>
+                      <br>
+                      <b> EachBill : </b>
+                      <sup></sup><span id="Eachbill">0.00</span>
+                  </div>
+            </div>
+          <!--totalTip end--> ​
+        </div>
+      <!--container end-->
+  ​
+  <script type="text/javascript" src="index.js"></script>
+  </body>
+  </html>
